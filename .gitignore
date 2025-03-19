@@ -37,6 +37,9 @@ ENV/
 env.bak/
 venv.bak/
 
+#local IDE
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
