@@ -18,7 +18,13 @@
    cd wcag-check-frontend
    npm install  
    ```
-3️⃣ Start the services:
+3️⃣ **Environment Variable:** 
+
+  Set the environment variable `HUGGINFACE_API_TOKEN` to enable access to the Hugging Face API. You can do this by adding it to a `.env` file or setting it directly in your system:
+  ```bash
+  export HUGGINFACE_API_TOKEN=<your_token_here>
+  ```
+4️⃣ Start the services:
    ```bash
    cd wcag-check-frontend
    npm run dev  
