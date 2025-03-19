@@ -1,0 +1,123 @@
+/* Gesamtes Seitenlayout */
+.App {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #2b2b2b; /* Dunkler Hintergrund */
+  color: #f5f5f5;
+}
+
+.container {
+  background-color: #ffffff;
+  color: #333333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #444;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  color: #fff;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.report {
+  margin-top: 20px;
+}
+
+.violation {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border-left: 4px solid #ccc; /* Standard-Farbe */
+  color: #333;
+}
+
+.violation h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.violation-nodes {
+  margin-left: 10px;
+}
+
+.violation-node {
+  background-color: #ffffff;
+  border-left: 4px solid #e74c3c; /* Standard Rot, wird überschrieben */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: Consolas, monospace;
+}
+
+/* Dynamische Klassen je nach Impact */
+.violation.impact-critical {
+  border-left-color: #e74c3c; /* Rot */
+}
+
+.violation.impact-serious {
+  border-left-color: #e67e22; /* Orange */
+}
+
+.violation.impact-moderate {
+  border-left-color: #f1c40f; /* Gelb */
+}
+
+.violation.impact-minor {
+  border-left-color: #2ecc71; /* Grün */
+}
+
+.violation.impact-none {
+  border-left-color: #bdc3c7; /* Hellgrau */
+}
