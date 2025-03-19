@@ -1,5 +1,5 @@
 # WCAG Accessibility Checker  
-🔍 A system for automated WCAG accessibility testing of websites.  
+🔍 A Proof-of-Concept for automated WCAG accessibility testing of websites using axe-core and Image-to-text LLM.  
 
 ## 📂 Project Structure  
 - **wcag-check-frontend/** → React-based UI for accessibility analysis  
@@ -9,17 +9,22 @@
 1️⃣ **Clone the repository:**  
    ```bash
    git clone https://github.com/PascalHamar/accessibilty-checker-PoC.git
-   cd wcagPoC
+   cd accessibilty-checker-PoC
    ```
 2️⃣ **Install dependencies:**
    ```bash
-   cd wcag-check-frontend && npm install  
-   cd ../ && npm install
+   cd wcagPoC
+   npm install
+   cd wcag-check-frontend
+   npm install  
    ```
 3️⃣ Start the services:
    ```bash
-   cd wcag-check-frontend && npm run dev  
-   cd ../WCAGPOC && func start
+   cd wcag-check-frontend
+   npm run dev  
+   cd ../wcagPoC
+   func start
+   #initial start: choose Node option for worker runtime
    ```
 ## ⚙ Technologies
 - **Frontend:** React.js (Vite)
@@ -34,4 +39,3 @@
    
    ✅ AI-generated alt-text suggestions for images
    
-   ✅ Scalable architecture for cloud deployment
